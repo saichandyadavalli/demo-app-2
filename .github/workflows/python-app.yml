@@ -37,3 +37,5 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+    - name: Save state
+      run: echo "::save-state name={name}::{value}"
